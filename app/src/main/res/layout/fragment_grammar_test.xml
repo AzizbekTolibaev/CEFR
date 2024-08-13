@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Grammar Test 1"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/custom_seekbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:progress="3"
+        android:max="8"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="4dp"
+        android:thumb="@drawable/custom_thumb"
+        android:progressDrawable="@drawable/progress_test"
+        android:splitTrack="false"
+        android:thumbTint="@color/thumb_color"
+        android:progressTint="@color/progress_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_progress"
+        app:layout_constraintTop_toBottomOf="@id/custom_toolbar"/>
+
+    <TextView
+        android:id="@+id/tv_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3/8"
+        android:textSize="16sp"
+        android:layout_marginEnd="22dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/custom_seekbar"
+        app:layout_constraintBottom_toBottomOf="@id/custom_seekbar"/>
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. People say that good friends are there for you in difficult times. ____ that good friends are there for you in difficult times."
+        android:textSize="18sp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="22dp"
+        app:layout_constraintTop_toBottomOf="@id/custom_seekbar"/>
+
+    <TextView
+        android:id="@+id/tv_option_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A) Is said"
+        android:textSize="16sp"
+        android:layout_marginTop="32dp"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:background="@drawable/bg_option_select"
+        android:layout_marginHorizontal="22dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_question"/>
+
+    <TextView
+        android:id="@+id/tv_option_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="B) It is said"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:background="@drawable/bg_option_select"
+        android:layout_marginHorizontal="22dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_option_1"/>
+
+    <TextView
+        android:id="@+id/tv_option_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C) People are said"
+        android:textSize="16sp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:background="@drawable/bg_option_select"
+        android:layout_marginHorizontal="22dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_option_2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="22dp"
+        android:paddingVertical="16dp"
+        android:clipToPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_select"
+            android:backgroundTint="@color/seekbar_background_color"
+            android:text="Back"
+            android:layout_marginEnd="8dp"
+            android:textAllCaps="false"
+            android:textColor="@color/back_select_color"
+            android:textSize="18sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/back_select"
+            android:backgroundTint="@color/seekbar_background_color"
+            android:text="Next"
+            android:layout_marginStart="8dp"
+            android:textAllCaps="false"
+            android:textColor="@color/back_select_color"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

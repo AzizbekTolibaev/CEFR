@@ -16,4 +16,9 @@
     <color name="o70_333333">#B3333333</color>
     <color name="o70_EFEFEF">#B3EFEFEF</color>
     <color name="back_select_color">#353E81</color>
+
+    <color name="thumb_color">#3E3F8C</color>
+    <color name="progress_color">#3E3F8C</color>
+    <color name="seekbar_background_color">#E0E6F1</color>
+
 </resources>
