@@ -1,14 +1,20 @@
-[
-  {
-    "type": "Title",
-    "body": "Explanation"
-  },
-  {
-    "type": "Normal",
-    "body": "We can use the passive voice to change the focus of the sentence."
-  },
-  {
-    "type": "Example",
-    "body": "Aliya Monier directed the film.\u2028(focus on Aliya Monier)"
-  }
-]
+
+
+
+{
+  "id": "topic",
+  "theory": [
+    {
+      "type": "Title",
+      "body": "Explanation"
+    },
+    {
+      "type": "Normal",
+      "body": "We can use the passive voice to change the focus of the sentence."
+    },
+    {
+      "type": "Example",
+      "body": "Aliya Monier directed the film.\u2028(focus on Aliya Monier)"
+    }
+  ]
+}

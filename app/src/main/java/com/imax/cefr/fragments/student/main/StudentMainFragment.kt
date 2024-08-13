@@ -8,6 +8,8 @@ import androidx.fragment.app.Fragment
 import com.imax.cefr.databinding.FragmentStudentMainBinding
 import com.imax.cefr.R
 import com.imax.cefr.core.base.fragment.replaceFragment
+import com.imax.cefr.fragments.student.grammarexplanation.GrammarExplanationFragment
+import com.imax.cefr.fragments.student.grammartest.GrammarTestFragment
 import com.imax.cefr.fragments.student.home.StudentHomeFragment
 import com.imax.cefr.fragments.student.profile.StudentProfileFragment
 import com.imax.cefr.fragments.student.rating.StudentRatingFragment
@@ -39,10 +41,10 @@ class StudentMainFragment: Fragment() {
         binding.bottomNavStudentMain.setOnItemSelectedListener { menuItem ->
             when(menuItem.itemId){
                 R.id.item_menu_student_rating -> {
-                    binding.toolbar.title = "Rating"
+                    binding.toolbar.title = "Rating"    
                     childFragmentManager.replaceFragment(
                         R.id.fragment_student_main_container,
-                        StudentRatingFragment()
+                        GrammarExplanationFragment()
                     )
                 }
                 R.id.item_menu_student_profile -> {

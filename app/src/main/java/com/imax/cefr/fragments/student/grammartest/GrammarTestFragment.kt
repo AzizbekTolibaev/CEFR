@@ -20,6 +20,8 @@ class GrammarTestFragment: Fragment(R.layout.fragment_grammar_test) {
 
         changingOptions()
 
+        binding.customSeekbar.isEnabled = false
+
         binding.btnNext.setOnClickListener {
             if (selectedOption == 0) {
                 toastMessage("Select option!")
